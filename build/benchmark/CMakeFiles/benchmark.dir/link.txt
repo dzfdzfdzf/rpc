@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/benchmark.dir/benchmark.cc.o CMakeFiles/benchmark.dir/__/example/user.pb.cc.o -o ../../bin/benchmark   -L/home/ubuntu/mprpc/lib  -L/home/ubuntu/mprpc/benchmark/../lib  -Wl,-rpath,/home/ubuntu/mprpc/lib:/home/ubuntu/mprpc/benchmark/../lib ../../lib/librpc.a -lprotobuf -lpthread -lzookeeper_mt -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 

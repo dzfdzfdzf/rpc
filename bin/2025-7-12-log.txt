@@ -1,0 +1,2 @@
+14:20:47 =>first log message!
+14:20:47 =>/root/mprpc/example/callee/userservice.cc:main:52

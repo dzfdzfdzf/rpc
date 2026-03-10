@@ -1,0 +1,10 @@
+16:24:3 =>first log message!
+16:24:3 =>/root/mprpc/example/callee/userservice.cc:main:52
+16:27:51 =>first log message!
+16:27:51 =>/root/mprpc/example/callee/userservice.cc:main:52
+16:28:18 =>first log message!
+16:28:18 =>/root/mprpc/example/callee/userservice.cc:main:52
+16:32:39 =>first log message!
+16:32:39 =>/home/ubuntu/mprpc/example/callee/userservice.cc:main:52
+16:33:8 =>first log message!
+16:33:8 =>/home/ubuntu/mprpc/example/callee/userservice.cc:main:52

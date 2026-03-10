@@ -1,0 +1,16 @@
+/home/ubuntu/mprpc/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mprpc/build/src/CMakeFiles/rpc.dir
+/home/ubuntu/mprpc/build/src/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/src/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mprpc/build/example/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/example/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mprpc/build/example/callee/CMakeFiles/provider.dir
+/home/ubuntu/mprpc/build/example/callee/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mprpc/build/example/caller/CMakeFiles/consumer.dir
+/home/ubuntu/mprpc/build/example/caller/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/example/caller/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/mprpc/build/benchmark/CMakeFiles/benchmark.dir
+/home/ubuntu/mprpc/build/benchmark/CMakeFiles/edit_cache.dir
+/home/ubuntu/mprpc/build/benchmark/CMakeFiles/rebuild_cache.dir
