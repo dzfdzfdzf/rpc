@@ -11,6 +11,13 @@
 #include "zookeeperutil.h"
 #include<iostream>
 
+// 构造函数
+RpcChannel::RpcChannel(): m_zkClientInited(false) {
+}
+
+// 析构函数
+RpcChannel::~RpcChannel() {
+}
 
 std::string RpcChannel::getServiceAddress(const std::string& serviceName, const std::string& methodName, google::protobuf::RpcController* controller){
     std::string method_path = "/" + serviceName + "/" + methodName;
@@ -24,18 +31,20 @@ std::string RpcChannel::getServiceAddress(const std::string& serviceName, const 
         }
     }
     
-    // 从ZooKeeper获取
-    ZkClient zkCli;
-    zkCli.Start();
+    // 初始化ZooKeeper客户端（只初始化一次）
+    if (!m_zkClientInited) {
+        m_zkClient.Start();
+        m_zkClientInited = true;
+    }
     
     // 设置watch回调
     auto watcher = [this](int type, int state, const char* path) {
         this->onServiceAddressChanged(type, state, path);
     };
     
-    std::string host_data = zkCli.GetData(method_path.c_str(), watcher);
+    std::string host_data = m_zkClient.GetData(method_path.c_str(), watcher);
     if(host_data == ""){
-        controller->SetFailed(method_path + "is not exist!");
+        controller->SetFailed(method_path + " is not exist!");
         return "";
     }
     

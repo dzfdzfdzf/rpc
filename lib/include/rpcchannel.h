@@ -5,9 +5,12 @@
 #include<string>
 #include<unordered_map>
 #include<mutex>
+#include "zookeeperutil.h"
 
 class RpcChannel:public google::protobuf::RpcChannel{
     public:
+        RpcChannel();
+        ~RpcChannel();
         void CallMethod(const google::protobuf::MethodDescriptor*method, 
         google::protobuf::RpcController*controller,
         const google::protobuf::Message*request,
@@ -19,7 +22,10 @@ class RpcChannel:public google::protobuf::RpcChannel{
         std::unordered_map<std::string, std::string> m_serviceAddressCache;
         // 缓存锁
         std::mutex m_cacheMutex;
-        // 从ZooKeeper获取服务地址（带缓存）
+        // ZooKeeper客户端（保持长连接）
+        ZkClient m_zkClient;
+        bool m_zkClientInited;
+        // 从ZooKeeper获取服务地址（带缓存和watch）
         std::string getServiceAddress(const std::string& serviceName, const std::string& methodName, google::protobuf::RpcController* controller);
         // Watch回调函数
         void onServiceAddressChanged(int type, int state, const char* path);

@@ -276,6 +276,34 @@ example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: \
  /usr/include/google/protobuf/wire_format_lite.h \
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
+ /home/ubuntu/mprpc/src/include/zookeeperutil.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/zookeeper/zookeeper.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
+ /usr/include/zookeeper/zookeeper_version.h \
+ /usr/include/zookeeper/recordio.h \
+ /usr/include/zookeeper/zookeeper.jute.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/queue \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/condition_variable \
  /home/ubuntu/mprpc/example/user.pb.h \
  /usr/include/google/protobuf/generated_message_table_driven.h \
  /usr/include/google/protobuf/map.h \

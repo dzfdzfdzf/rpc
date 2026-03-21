@@ -285,6 +285,34 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /home/ubuntu/mprpc/src/include/rpcconfig.h \
  /home/ubuntu/mprpc/src/include/rpccontroller.h \
  /home/ubuntu/mprpc/src/include/rpcchannel.h \
+ /home/ubuntu/mprpc/src/include/zookeeperutil.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/zookeeper/zookeeper.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
+ /usr/include/zookeeper/zookeeper_version.h \
+ /usr/include/zookeeper/recordio.h \
+ /usr/include/zookeeper/zookeeper.jute.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/queue \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/condition_variable \
  /home/ubuntu/mprpc/src/include/rpcprovider.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
@@ -308,22 +336,6 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /usr/local/include/boost/core/addressof.hpp \
  /usr/include/muduo/net/Buffer.h /usr/include/muduo/net/Endian.h \
  /usr/include/muduo/net/InetAddress.h /usr/include/netinet/in.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/local/include/boost/any.hpp \
  /usr/local/include/boost/type_index.hpp \
  /usr/local/include/boost/type_index/stl_type_index.hpp \
@@ -360,16 +372,4 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /usr/include/muduo/net/EventLoop.h /usr/include/muduo/base/Mutex.h \
  /usr/include/muduo/base/CurrentThread.h /usr/include/muduo/net/TimerId.h \
  /home/ubuntu/mprpc/src/include/logger.h \
- /home/ubuntu/mprpc/src/include/lockqueue.h /usr/include/c++/11/queue \
- /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
- /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_queue.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/c++/11/condition_variable \
- /home/ubuntu/mprpc/src/include/zookeeperutil.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/zookeeper/zookeeper.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
- /usr/include/zookeeper/zookeeper_version.h \
- /usr/include/zookeeper/recordio.h \
- /usr/include/zookeeper/zookeeper.jute.h
+ /home/ubuntu/mprpc/src/include/lockqueue.h

@@ -1,0 +1,4 @@
+16:23:58 =>first log message!
+16:23:58 =>/home/ubuntu/mprpc/example/callee/userservice.cc:main:52
+16:27:4 =>first log message!
+16:27:4 =>/home/ubuntu/mprpc/example/callee/userservice.cc:main:52
