@@ -277,6 +277,90 @@ Latency (us):
 - **注册中心**: 可扩展支持Consul、etcd等其他注册中心
 - **网络库**: 可扩展支持其他网络库或自定义实现
 
+## 故障排查
+
+### ZooKeeper未启动的问题
+
+如果ZooKeeper未启动，项目会出现以下错误：
+
+#### 服务提供者启动失败
+```
+Failed to connect to ZooKeeper: Socket [127.0.0.1:2181] zk retcode=-4
+ZooKeeper connection failed!
+```
+
+#### 服务消费者调用失败
+```
+/user.UserServiceRpc/Login is not exist!
+RPC call failed
+```
+
+### 解决方案
+
+#### 方法一：启动ZooKeeper服务
+
+```bash
+# 启动ZooKeeper服务
+sudo systemctl start zookeeper
+
+# 检查服务状态
+sudo systemctl status zookeeper
+
+# 设置开机自启
+sudo systemctl enable zookeeper
+```
+
+#### 方法二：检查ZooKeeper端口
+
+```bash
+# 检查2181端口是否监听
+netstat -tlnp | grep 2181
+
+# 如果端口未监听，重启服务
+sudo systemctl restart zookeeper
+```
+
+#### 方法三：安装ZooKeeper（如果未安装）
+
+```bash
+# 安装ZooKeeper
+sudo apt update
+sudo apt install zookeeperd
+
+# 启动服务
+sudo systemctl start zookeeper
+```
+
+### 配置调整
+
+如果您不想使用ZooKeeper，可以修改代码以支持直连模式：
+
+#### 修改RpcChannel中的服务地址获取逻辑
+```cpp
+std::string RpcChannel::getServiceAddress(...) {
+    // 如果ZooKeeper不可用，使用硬编码的地址
+    return "127.0.0.1:8000";
+}
+```
+
+#### 修改配置文件
+在`test.conf`中添加备用地址配置：
+```
+rpcserverip=127.0.0.1
+rpcserverport=8000
+zookeeperip=127.0.0.1
+zookeeperport=2181
+fallback_server=127.0.0.1:8000
+```
+
+### 故障排查步骤
+
+1. **检查ZooKeeper服务状态**：`sudo systemctl status zookeeper`
+2. **检查端口监听**：`netstat -tlnp | grep 2181`
+3. **测试连接**：`telnet 127.0.0.1 2181`
+4. **查看日志**：`sudo tail -f /var/log/zookeeper/zookeeper.log`
+5. **重启服务**：`sudo systemctl restart zookeeper`
+
 ## License
 
 MIT License
